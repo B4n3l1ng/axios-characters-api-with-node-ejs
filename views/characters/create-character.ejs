@@ -1,0 +1,13 @@
+<h2>Create a new character</h2>
+
+<form action="/create" method="POST">
+  <label>Character name:<input type="text" name="name" required /></label>
+  <label>Occupation:<input type="text" name="occupation" required /></label>
+  <label>Weapons:<input type="text" name="weapon" required /></label>
+  <label>Is the new character in debt?</label>
+  <select name="debt" id="selection">
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+  <button>Create!</button>
+</form>

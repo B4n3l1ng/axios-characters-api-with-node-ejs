@@ -1,0 +1,31 @@
+<h2>Edit <%= character.name %></h2>
+
+<form action="/characters/<%= character.id %>/edit" method="POST">
+  <label
+    >Character name:<input
+      type="text"
+      name="name"
+      required
+      value="<%= character.name %>"
+  /></label>
+  <label
+    >Occupation:<input
+      type="text"
+      name="occupation"
+      required
+      value="<%= character.occupation %>"
+  /></label>
+  <label
+    >Weapons:<input
+      type="text"
+      name="weapon"
+      required
+      value="<%= character.weapon %>"
+  /></label>
+  <label>Is the new character in debt?</label>
+  <select name="debt" id="selection">
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+  <button>Edit!</button>
+</form>
